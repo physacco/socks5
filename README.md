@@ -22,11 +22,15 @@ To stop the server:
 
 ## Examples
 
-1. Listening on _\*:1080_:
+1. Listen on _\*:1080_:
 
     socks5 :1080
 
-2. Listen on _localhost:1080_
+2. Listen on _localhost:1080_:
 
     socks5 localhost:1080
+
+3. Check if the server is working well:
+
+    curl --socks5-hostname localhost:1080 http://www.google.com/
 
